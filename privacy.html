@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for the unofficial JAL LSP Tracker Chrome extension.">
+  <title>Privacy Policy — JAL LSP Tracker</title>
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <header>
+    <div class="shell">
+      <nav>
+        <a class="brand" href="index.html">JAL LSP Tracker</a>
+        <div class="nav-links"><a href="index.html">About</a><a href="privacy.html">Privacy</a></div>
+      </nav>
+      <section class="hero">
+        <p class="eyebrow">Effective September 26, 2026</p>
+        <h1>Privacy Policy</h1>
+        <p class="lede">How JAL LSP Tracker handles information locally on your device.</p>
+      </section>
+    </div>
+  </header>
+
+  <main class="shell">
+    <nav class="lang-jump" aria-label="Language sections">
+      <a class="pill" href="#en">English</a><a class="pill" href="#ja">日本語</a><a class="pill" href="#zh">简体中文</a>
+    </nav>
+
+    <article class="card" id="en" lang="en">
+      <h2>English</h2>
+      <p class="meta">Version 1.0 · Effective September 26, 2026</p>
+      <h3>1. Product and independence</h3>
+      <p>JAL LSP Tracker is an independently developed, unofficial Chrome extension. It is not affiliated with, authorized by, endorsed by, or produced by Japan Airlines Co., Ltd.</p>
+      <h3>2. Information handled</h3>
+      <p>Only after the user actively starts synchronization, the extension reads information already displayed on trusted JAL Life Status Point pages: total LSP; transaction date, category, service, description, and LSP amount; displayed date range; the source page path with query parameters removed; synchronization coverage and status; and the interface-language preference. It does not save passwords, cookies, authentication tokens, JMB membership numbers, payment information, mileage balances, or FLY ON Point balances.</p>
+      <h3>3. Purpose</h3>
+      <p>The information is used only to save the user's LSP history locally, prevent duplicate or incomplete synchronization, calculate summaries and trends, estimate progress toward Star Grade LSP requirements, and provide user-requested CSV or JSON exports.</p>
+      <h3>4. Storage and transmission</h3>
+      <p>LSP records, settings, synchronization coverage, and job state are stored in <code>chrome.storage.local</code> in the user's current Chrome profile. To resume a user-requested sync after the optional-permission prompt closes the popup, the extension temporarily stores a random request ID, the originating tab and window IDs, and creation/expiry times in <code>chrome.storage.session</code> for no more than about five minutes. This temporary record contains no LSP content, credentials, or account identifier and is removed when the request starts, is cancelled, expires, or the browser session ends.</p>
+      <p>JAL LSP Tracker has no developer-operated backend and does not transmit the collected information to the developer, JAL, advertisers, analytics providers, or other third parties. Extension pages block external network connections and use no remote executable code.</p>
+      <h3>5. Sharing, sale, advertising, and human access</h3>
+      <p>The extension does not sell, share, rent, or monetize user data; does not use it for advertising, creditworthiness, or unrelated purposes; and does not allow the developer or other humans to read it. Data leaves the device only when the user deliberately exports a file and then chooses what to do with that file.</p>
+      <h3>6. Permissions</h3>
+      <ul>
+        <li><strong>storage:</strong> save LSP records and preferences locally.</li>
+        <li><strong>scripting and activeTab:</strong> read the specific JAL pages involved in a user-started synchronization.</li>
+        <li><strong>alarms:</strong> provide timeouts and safe cleanup for the synchronization workflow.</li>
+        <li><strong>Optional access to https://*.jal.co.jp/*:</strong> requested only when synchronization starts, so the workflow can continue across JAL login redirects, the LSP overview, and LSP history pages.</li>
+      </ul>
+      <h3>7. User control and retention</h3>
+      <p>Records remain in the current Chrome profile until the user clears them from the dashboard, clears extension storage, or uninstalls the extension. The dashboard can export CSV or JSON and can delete LSP records, synchronization ranges, and job state. The language preference may remain after clearing LSP records and is removed when the extension is uninstalled.</p>
+      <h3>8. Chrome Web Store Limited Use</h3>
+      <p>The use of information received from Chrome APIs adheres to the Chrome Web Store User Data Policy, including the Limited Use requirements. Information is used only to provide or improve the extension's single, user-facing purpose described above.</p>
+      <h3>9. Changes and support</h3>
+      <p>Material changes will be reflected on this page with a new effective date. For support, use the project's <a href="https://github.com/IndeedSi/lsp-tracker-for-jal/issues">GitHub Issues page</a>. Do not post account identifiers, screenshots containing personal data, or exported LSP history in a public issue.</p>
+    </article>
+
+    <article class="card" id="ja" lang="ja">
+      <h2>日本語</h2>
+      <p class="meta">バージョン 1.0 · 2026年9月26日施行</p>
+      <h3>1. 本製品と独立性</h3>
+      <p>JAL LSP Tracker は個人が独立して開発した非公式の Chrome 拡張機能です。日本航空株式会社との提携、許諾、推奨または制作上の関係はありません。</p>
+      <h3>2. 取り扱う情報</h3>
+      <p>ユーザーが同期を開始した場合に限り、信頼できる JAL Life Status ポイントページに表示済みの情報を読み取ります。対象は、合計 LSP、積算日、カテゴリー、サービス、内容、LSP 数、表示期間、クエリを除いた参照ページのパス、同期範囲・状態、表示言語設定です。パスワード、Cookie、認証トークン、JMB お得意様番号、支払情報、有効マイル数、FLY ON ポイント数は保存しません。</p>
+      <h3>3. 利用目的</h3>
+      <p>LSP 履歴のローカル保存、重複や欠落の防止、集計・推移の計算、各 Star グレードの LSP 達成基準への到達時期の推定、およびユーザーが選択した CSV／JSON 書き出しにのみ利用します。</p>
+      <h3>4. 保存と送信</h3>
+      <p>LSP 記録、設定、同期範囲およびタスク状態は、現在の Chrome プロファイル内の <code>chrome.storage.local</code> に保存されます。任意アクセス許可の画面でポップアップが閉じた後もユーザーが要求した同期を再開できるよう、ランダムな要求 ID、開始元のタブ／ウィンドウ ID、作成・失効時刻を <code>chrome.storage.session</code> に最長約5分間だけ一時保存します。この一時記録に LSP 内容、認証情報、会員識別子は含まれず、開始、キャンセル、失効またはブラウザーセッション終了時に削除されます。</p>
+      <p>開発者が運営するサーバーはなく、取得情報を開発者、JAL、広告事業者、解析事業者、その他第三者へ送信しません。拡張機能ページは外部通信を遮断し、リモート実行コードを使用しません。</p>
+      <h3>5. 共有・販売・広告・人による閲覧</h3>
+      <p>ユーザーデータを販売、共有、貸与、収益化せず、広告、信用評価、無関係な目的に使用しません。開発者その他の人がデータを閲覧することもありません。ユーザーが自ら書き出したファイルの扱いを選択した場合のみ、データが端末外へ移動する可能性があります。</p>
+      <h3>6. 権限</h3>
+      <ul>
+        <li><strong>storage:</strong> LSP 記録と設定をローカル保存。</li>
+        <li><strong>scripting / activeTab:</strong> ユーザーが開始した同期に必要な JAL ページのみを読み取り。</li>
+        <li><strong>alarms:</strong> 同期のタイムアウトと安全な終了処理。</li>
+        <li><strong>https://*.jal.co.jp/* への任意アクセス:</strong> 同期開始時だけ要求し、JAL のログイン遷移、LSP 概要、履歴ページをまたいで処理を継続。</li>
+      </ul>
+      <h3>7. ユーザーによる管理と保持期間</h3>
+      <p>データは、ダッシュボードで削除する、拡張機能ストレージを消去する、または拡張機能をアンインストールするまで現在の Chrome プロファイルに残ります。言語設定は LSP データ削除後も保持される場合がありますが、アンインストール時に削除されます。</p>
+      <h3>8. Chrome ウェブストアの Limited Use</h3>
+      <p>Chrome API から受け取る情報の利用は、Limited Use 要件を含む Chrome ウェブストア ユーザーデータ ポリシーに従います。情報は上記の単一かつユーザー向けの目的を提供または改善するためにのみ使用します。</p>
+      <h3>9. 変更とサポート</h3>
+      <p>重要な変更は新しい施行日とともにこのページへ反映します。サポートは <a href="https://github.com/IndeedSi/lsp-tracker-for-jal/issues">GitHub Issues</a> で受け付けます。公開 Issue に会員情報、個人情報を含む画面、または書き出した履歴を投稿しないでください。</p>
+    </article>
+
+    <article class="card" id="zh" lang="zh-CN">
+      <h2>简体中文</h2>
+      <p class="meta">版本 1.0 · 2026年9月26日生效</p>
+      <h3>1. 产品及独立性</h3>
+      <p>JAL LSP Tracker 是独立开发的非官方 Chrome 扩展，与日本航空株式会社不存在隶属、授权、背书或共同开发关系。</p>
+      <h3>2. 处理的信息</h3>
+      <p>只有用户主动开始同步后，扩展才读取可信 JAL Life Status Point 页面上已经显示的信息：总 LSP；积算日期、类别、服务、内容和 LSP 数值；显示期间；去掉查询参数的来源页面路径；同步覆盖范围和状态；以及界面语言偏好。扩展不保存密码、Cookie、认证令牌、JMB 会员号、支付信息、有效里程或 FLY ON Point。</p>
+      <h3>3. 使用目的</h3>
+      <p>这些信息仅用于在本地保存用户的 LSP 历史、防止重复或不完整同步、计算汇总与趋势、估算达到各 Star Grade LSP 达成基准的时间，以及生成用户主动请求的 CSV 或 JSON 导出文件。</p>
+      <h3>4. 保存和传输</h3>
+      <p>LSP 记录、设置、同步覆盖范围和任务状态通过 <code>chrome.storage.local</code> 保存在用户当前 Chrome 配置中。为了在可选权限提示关闭弹窗后继续执行用户请求的同步，扩展会把随机请求 ID、发起同步的标签页与窗口 ID、创建及过期时间临时保存在 <code>chrome.storage.session</code>，最长约五分钟。该临时记录不含 LSP 内容、登录信息或账户标识，并会在任务开始、取消、过期或浏览器会话结束时删除。</p>
+      <p>JAL LSP Tracker 没有开发者运营的服务器，不会把收集的信息发送给开发者、JAL、广告商、分析服务商或其他第三方。扩展页面禁止外部网络连接，也不使用远程可执行代码。</p>
+      <h3>5. 共享、出售、广告和人工访问</h3>
+      <p>扩展不会出售、共享、出租或以其他方式利用用户数据获利；不会将其用于广告、信用评估或无关用途；开发者或其他人员也无法读取这些数据。只有用户主动导出文件并自行处理时，数据才可能离开设备。</p>
+      <h3>6. 权限</h3>
+      <ul>
+        <li><strong>storage：</strong>在本地保存 LSP 记录和设置。</li>
+        <li><strong>scripting 和 activeTab：</strong>读取用户主动发起同步所涉及的特定 JAL 页面。</li>
+        <li><strong>alarms：</strong>为同步流程提供超时和安全清理。</li>
+        <li><strong>可选 https://*.jal.co.jp/*：</strong>仅在开始同步时请求，以便同步能跨越 JAL 登录跳转、LSP 总览页和历史页继续运行。</li>
+      </ul>
+      <h3>7. 用户控制和保留期限</h3>
+      <p>记录会保留在当前 Chrome 配置中，直到用户从仪表盘清除、清除扩展存储或卸载扩展。仪表盘可以导出 CSV/JSON，并删除 LSP 记录、同步范围和任务状态。界面语言偏好可能在清除 LSP 数据后保留，但会在卸载扩展时删除。</p>
+      <h3>8. Chrome 应用商店 Limited Use</h3>
+      <p>对通过 Chrome API 获得的信息的使用遵守 Chrome Web Store User Data Policy，包括 Limited Use 要求。信息仅用于提供或改进上述单一且面向用户的功能。</p>
+      <h3>9. 变更和支持</h3>
+      <p>重大变更会以新的生效日期更新在本页面。需要支持时，请使用项目的 <a href="https://github.com/IndeedSi/lsp-tracker-for-jal/issues">GitHub Issues</a>。请勿在公开 Issue 中发布账户标识、含个人数据的截图或导出的 LSP 历史。</p>
+    </article>
+  </main>
+
+  <footer class="shell">© 2026 JAL LSP Tracker project · Independent and unofficial</footer>
+</body>
+</html>
